@@ -1,0 +1,39 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---- Credentials (never commit) ----
+.env
+*-service-account*.json
+credentials.json
+client_secret*.json
+
+# ---- Data ----
+# Raw BigQuery extracts are large and reproducible from sql/ — do not commit.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Processed/aggregated outputs ARE committed on purpose:
+# BigQuery sandbox tables expire after 60 days, so these are the durable record.
+# (data/processed/ is intentionally NOT ignored)
+
+# ---- Office / BI temp files ----
+~$*.xlsx
+~$*.docx
+~$*.pptx
+*.tmp
+
+# Power BI: commit the .pbix only if under ~50MB, otherwise screenshots only.
+# Uncomment the next line if the file gets too large:
+# *.pbix
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
