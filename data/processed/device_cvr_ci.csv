@@ -1,0 +1,4 @@
+device_category,sessions,purchases,cvr_pct,ci_lower_pct,ci_upper_pct,revenue_per_session,aov
+desktop,208942,2749,1.316,1.268,1.365,0.999,64.73
+mobile,143185,1995,1.393,1.334,1.455,1.025,62.32
+tablet,8002,104,1.3,1.074,1.572,0.823,59.3

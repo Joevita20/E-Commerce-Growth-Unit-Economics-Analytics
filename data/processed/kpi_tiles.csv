@@ -1,0 +1,6 @@
+sort,kpi,value,display_value,context
+1,Sessions,360129.0,"360,129","270,154 users"
+2,Revenue,362165.0,"$362,165","5,692 orders"
+3,Conversion rate,1.346,1.35%,1.83% on attributable traffic
+4,Average order value,63.63,$63.63,mobile $62.32 / desktop $64.73
+5,Revenue per session,1.006,$1.006,Referral highest at $1.07

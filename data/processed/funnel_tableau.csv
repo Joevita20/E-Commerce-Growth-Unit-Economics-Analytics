@@ -1,0 +1,7 @@
+step_no,step_name,sessions,prev_step,step_conv_pct,dropoff_pct,sessions_lost,cumulative_conv_pct,emphasis
+1,Session start,354857,,,,,100.0,Context
+2,View item,77020,354857.0,21.7,78.3,277837,21.7,Context
+3,Add to cart,15188,77020.0,19.72,80.28,61832,4.28,Context
+4,Begin checkout,11106,15188.0,73.12,26.88,4082,3.13,Context
+6,Add payment,6815,11106.0,61.36,38.64,4291,1.92,Focus
+7,Purchase,4848,6815.0,71.14,28.86,1967,1.37,Context

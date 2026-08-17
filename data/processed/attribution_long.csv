@@ -1,0 +1,19 @@
+channel,genuine_channel,model,revenue,sessions,revenue_per_session
+Affiliate,no,First touch,0.0,0,
+Affiliate,no,Last touch,0.0,1012,0.0
+Direct,yes,First touch,79650.0,83459,0.954
+Direct,yes,Last touch,12190.0,28175,0.433
+Internal,no,First touch,0.0,0,
+Internal,no,Last touch,0.0,2982,0.0
+Organic Search,yes,First touch,104007.0,122841,0.847
+Organic Search,yes,Last touch,53518.0,73643,0.727
+Other / obfuscated,no,First touch,35470.0,52058,0.681
+Other / obfuscated,no,Last touch,5959.0,18843,0.316
+Paid Search,yes,First touch,9056.0,15618,0.58
+Paid Search,yes,Last touch,1982.0,5710,0.347
+Redacted,no,First touch,50461.0,22632,2.23
+Redacted,no,Last touch,7869.0,5190,1.516
+Referral,yes,First touch,37000.0,34672,1.067
+Referral,yes,Last touch,52756.0,17028,3.098
+Self-referral (artifact),no,First touch,46521.0,28849,1.613
+Self-referral (artifact),no,Last touch,227879.0,112228,2.031
