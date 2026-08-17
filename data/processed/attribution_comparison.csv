@@ -1,0 +1,10 @@
+channel,ft_sessions,ft_revenue,lt_sessions,lt_revenue,revenue_delta,lt_vs_ft_pct,ft_revenue_per_session,genuine_channel
+Organic Search,122841,104007.00,73643,53518.00,-50489.00,-48.5,0.847,yes
+Direct,83459,79650.00,28175,12190.00,-67460.00,-84.7,0.954,yes
+Redacted,22632,50461.00,5190,7869.00,-42592.00,-84.4,2.230,no
+Self-referral (artifact),28849,46521.00,112228,227879.00,181358.00,389.8,1.613,no
+Referral,34672,37000.00,17028,52756.00,15756.00,42.6,1.067,yes
+Other / obfuscated,52058,35470.00,18843,5959.00,-29511.00,-83.2,0.681,no
+Paid Search,15618,9056.00,5710,1982.00,-7074.00,-78.1,0.580,yes
+Internal,0,0.00,2982,0.00,0.00,,0.000,no
+Affiliate,0,0.00,1012,0.00,0.00,,0.000,no

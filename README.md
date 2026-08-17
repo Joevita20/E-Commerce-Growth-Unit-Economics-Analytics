@@ -24,9 +24,23 @@
 3. **Attribution coverage is 73.5%, and the missing 26.5% converts at 0.001% with zero
    revenue** — systematic, not random. Blended CVR (1.346%) understates attributable CVR
    (1.830%) by 36% relative, so the denominator choice is material.
-4. _TBD — mobile vs desktop conversion gap_
-5. _TBD — first-touch vs last-touch attribution shift_
-6. _TBD — forecast variance decomposition_
+4. **Device is not a conversion lever — contrary to the initial hypothesis.** Mobile
+   converts *above* desktop (1.393% vs 1.316%), a gap of 0.08pp that is statistically
+   borderline (z ≈ 1.96, p ≈ 0.05) and practically negligible. Step-level rates are
+   near-identical across devices, so the checkout collapse is **structural to the flow,
+   not a mobile UX problem** — which rules out a plausible but wrong remediation.
+5. **63% of revenue was attributed to the store referring to itself.** `shop.google
+   merchandisestore.com` appears as an external last-touch source for 112,228 sessions
+   carrying $227,879 — a cross-domain tracking artifact, not a channel. Identified,
+   quantified and excluded before any channel analysis was run.
+6. **Attribution model flips the channel ranking, not just the magnitudes.** Last-touch
+   understates Direct by 84.7%, Paid Search by 78.1% and Organic by 48.5%, while
+   overstating Referral by 42.6% — moving Referral from 3rd to a near-tie for 1st and
+   dropping Direct from 2nd to 3rd. Yet on revenue-per-session, Paid Search is still the
+   weakest genuine channel ($0.58 vs $1.006 site average), so the recommendation is to
+   **fix the measurement before changing the budget** — a measurement problem and a
+   performance problem, separated.
+7. _TBD — forecast variance decomposition_
 
 **Baseline:** 360,129 sessions · 270,154 users · $362,165 revenue · $63.63 AOV · $1.006 revenue/session
 

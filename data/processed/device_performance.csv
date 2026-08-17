@@ -1,0 +1,4 @@
+device_category,sessions,view_item,add_to_cart,begin_checkout,add_payment,purchase,cvr_pct,view_to_cart_pct,checkout_to_payment_pct,checkout_completion_pct,revenue_usd,aov,revenue_per_session
+desktop,208942,44819,8790,6392,3885,2749,1.316,19.61,60.78,43.01,208815.00,64.73,0.999
+mobile,143185,30501,6077,4474,2778,1995,1.393,19.92,62.09,44.59,146768.00,62.32,1.025
+tablet,8002,1700,321,240,152,104,1.300,18.88,63.33,43.33,6582.00,59.30,0.823
