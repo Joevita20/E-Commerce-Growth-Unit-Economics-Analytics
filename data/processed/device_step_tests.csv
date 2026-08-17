@@ -1,0 +1,5 @@
+step,desktop_pct,mobile_pct,diff_pp,z,p_value,significant
+View -> Cart,19.61,19.92,0.31,-1.055,0.2914,False
+Cart -> Checkout,72.72,73.62,0.9,-1.22,0.2224,False
+Checkout -> Payment,60.78,62.09,1.31,-1.383,0.1666,False
+Payment -> Purchase,70.76,71.81,1.05,-0.938,0.3485,False

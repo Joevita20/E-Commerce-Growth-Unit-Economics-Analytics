@@ -146,5 +146,7 @@ shares are quoted.
 | L2 | No ad spend data | CAC modelled from stated benchmarks, flagged as assumption |
 | L3 | `user_pseudo_id` is device-scoped | Cohort retention is approximate and labelled as such |
 | L4 | 3-month window | No seasonality or year-over-year analysis attempted |
+| L7 | **Cohort truncation.** Later cohorts have fewer observed weeks — the 25 Jan cohort has one, the 2 Nov cohort has thirteen. Post-acquisition revenue share is therefore systematically understated for recent cohorts. Only cohorts with 8+ weeks of history are compared on lifetime measures; week-0 metrics are comparable across all cohorts. |
+| L8 | **Cohort boundary effects.** The 26 Oct cohort covers a partial week (2,365 users vs ~20K typical) and shows an anomalous 10.74% week-1 retention. Excluded from retention trend analysis. |
 | L6 | Window falls in peak-COVID e-commerce (Nov 2020 – Jan 2021) | Online retail behaviour was atypical: inflated traffic, unusual conversion patterns, disrupted fulfilment. Absolute rates should not be read as a steady-state benchmark; the funnel *shape* and the analytical method are the transferable output. |
 | L5 | 26.5% of sessions lack attribution source | Excluded from channel analysis — see §3.2 |

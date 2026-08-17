@@ -24,11 +24,12 @@
 3. **Attribution coverage is 73.5%, and the missing 26.5% converts at 0.001% with zero
    revenue** — systematic, not random. Blended CVR (1.346%) understates attributable CVR
    (1.830%) by 36% relative, so the denominator choice is material.
-4. **Device is not a conversion lever — contrary to the initial hypothesis.** Mobile
-   converts *above* desktop (1.393% vs 1.316%), a gap of 0.08pp that is statistically
-   borderline (z ≈ 1.96, p ≈ 0.05) and practically negligible. Step-level rates are
-   near-identical across devices, so the checkout collapse is **structural to the flow,
-   not a mobile UX problem** — which rules out a plausible but wrong remediation.
+4. **A statistically significant result that should not be acted on.** Mobile converts
+   *above* desktop (1.393% vs 1.316%) at **p = 0.0497** — yet **no individual funnel step
+   differs significantly** (p = 0.29, 0.22, 0.17, 0.35) and the 95% CIs overlap. The
+   headline result is four indistinguishable differences accumulating across 350K
+   sessions. Recommendation: **no device-specific action**; the checkout collapse is
+   structural to the flow, not a mobile UX problem.
 5. **63% of revenue was attributed to the store referring to itself.** `shop.google
    merchandisestore.com` appears as an external last-touch source for 112,228 sessions
    carrying $227,879 — a cross-domain tracking artifact, not a channel. Identified,
@@ -40,7 +41,24 @@
    weakest genuine channel ($0.58 vs $1.006 site average), so the recommendation is to
    **fix the measurement before changing the budget** — a measurement problem and a
    performance problem, separated.
-7. _TBD — forecast variance decomposition_
+7. **The traffic cannot support small-effect experimentation.** Power analysis on the
+   payment step (61.37% baseline, 121 eligible sessions/day) shows a 1pp lift would need
+   **37,031 sessions per arm and 88 weeks** to detect at 80% power. The viable design is a
+   **3pp MDE, 4,070 per arm, ~10 weeks** — anything finer is undetectable before
+   seasonality contaminates the read.
+8. **Acquisition quality collapsed 85% post-holiday while traffic volume held.** Week-0
+   revenue per cohort user fell from **$1.62 (Black Friday week) to $0.24 (4 Jan)** with
+   cohort sizes still above 20K — January traffic is high-volume, low-intent. Week-1
+   retention traced the same V-shape, from **6.68% down to 2.46%** and back to 4.12%:
+   holiday-acquired users are one-time seasonal buyers.
+9. **Low retention ≠ low retention value.** Despite week-1 retention of only ~6%,
+   **57% of the 2 Nov cohort's total revenue arrived after the acquisition week**
+   ($28,483 vs $21,276) — repeated for the 9 Nov (54%) and 16 Nov (42%) cohorts. The
+   returning minority is disproportionately valuable per head, which changes the strategy
+   from pure acquisition to defending a small but economically material repeat base.
+10. _TBD — forecast variance decomposition_
+
+![Purchase funnel](reports/figures/funnel.png)
 
 **Baseline:** 360,129 sessions · 270,154 users · $362,165 revenue · $63.63 AOV · $1.006 revenue/session
 
