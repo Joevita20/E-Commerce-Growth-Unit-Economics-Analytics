@@ -14,9 +14,10 @@
 ## 1. Context
 
 The Google Merchandise Store is a direct-to-consumer e-commerce site selling branded
-apparel and accessories. Over the analysis window it recorded approximately 2M user
-events across roughly 270K sessions, captured in Google Analytics 4 and exported to
-BigQuery at event level.
+apparel and accessories. Over the analysis window it recorded **4,295,584 events across
+360,129 sessions from 270,154 users**, generating **$362,165 in revenue** at a **$63.63
+average order value**, captured in Google Analytics 4 and exported to BigQuery at event
+level.
 
 ## 2. Problem statement
 

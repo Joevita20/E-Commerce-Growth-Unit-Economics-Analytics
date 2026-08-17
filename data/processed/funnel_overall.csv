@@ -1,0 +1,8 @@
+step_no,step_name,sessions,prev_step,step_conv_pct,dropoff_pct,sessions_lost,cumulative_conv_pct
+1,Session start,354857,,,,,100.00
+2,View item,77020,354857,21.70,78.30,277837,21.70
+3,Add to cart,15188,77020,19.72,80.28,61832,4.28
+4,Begin checkout,11106,15188,73.12,26.88,4082,3.13
+5,Add shipping,11105,11106,99.99,0.01,1,3.13
+6,Add payment,6815,11105,61.37,38.63,4290,1.92
+7,Purchase,4848,6815,71.14,28.86,1967,1.37

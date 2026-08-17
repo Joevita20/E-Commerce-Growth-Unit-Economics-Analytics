@@ -1,0 +1,15 @@
+metric,value,unit,note
+raw_events,4295584,count,2020-11-01 to 2021-01-31
+sessions,360129,count,user_pseudo_id + ga_session_id
+users,270154,count,device-scoped
+sessions_per_user,1.33,ratio,
+total_revenue,362165.00,usd,purchase events only
+purchases,5692,count,purchase events
+purchase_sessions,4848,count,sessions reaching purchase
+aov,63.63,usd,revenue / purchases
+revenue_per_session,1.006,usd,
+cvr_blended,1.346,pct,all sessions
+cvr_attributable,1.830,pct,sessions with known source only
+cart_abandonment_rate,68.08,pct,1 - purchase sessions / add_to_cart sessions
+checkout_abandonment_rate,56.35,pct,1 - purchase sessions / begin_checkout sessions
+attribution_coverage,73.53,pct,sessions with session-scoped source

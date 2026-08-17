@@ -75,8 +75,8 @@ If it runs, setup is done.
 
 ## Running the SQL in this repo
 
-Files in `sql/` are numbered in execution order. Before running, replace the placeholder
-`YOUR_PROJECT` with your actual Project ID from step 1.
+Files in `sql/` are numbered in execution order and are already pointed at the project
+`ga4-growth-analytics-505818`. Paste them straight into the BigQuery editor.
 
 ```
 sql/00_explore_schema.sql     -- sanity checks; run first

@@ -1,9 +1,9 @@
 # E-Commerce Growth & Unit Economics Analytics
 
 > Where does a D2C store lose customers, which channels actually pay for themselves, and
-> what does next quarter look like? An end-to-end analysis of 2M+ GA4 events — from
-> BigQuery ETL to funnel diagnostics, channel attribution, unit economics, and a
-> driver-based revenue forecast.
+> what does next quarter look like? An end-to-end analysis of **4.3M GA4 events across
+> 360K sessions** — from BigQuery ETL to funnel diagnostics, channel attribution, unit
+> economics, and a driver-based revenue forecast.
 
 **Stack:** Python · SQL · Google BigQuery · dbt · Power BI (DAX) · Tableau · Excel · A/B Testing
 
@@ -15,11 +15,20 @@
 
 > _Populated as the analysis completes. Each finding = a number, a "so what", and an action._
 
-1. _TBD — funnel drop-off_
-2. _TBD — mobile vs desktop conversion gap_
-3. _TBD — first-touch vs last-touch attribution shift_
-4. _TBD — channel unit economics_
-5. _TBD — forecast variance decomposition_
+1. **56.4% of sessions that begin checkout never purchase** — 6,258 high-intent sessions
+   lost after the user has already committed. The loss concentrates at a single step:
+   **38.6% drop between entering shipping details and entering payment** (4,290 sessions),
+   followed by a further **28.9% drop between payment entry and purchase**.
+2. **80.3% of sessions that view a product never add it to cart** (61,832 sessions) — the
+   largest proportional leak, but a slower, merchandising-led fix than checkout.
+3. **Attribution coverage is 73.5%, and the missing 26.5% converts at 0.001% with zero
+   revenue** — systematic, not random. Blended CVR (1.346%) understates attributable CVR
+   (1.830%) by 36% relative, so the denominator choice is material.
+4. _TBD — mobile vs desktop conversion gap_
+5. _TBD — first-touch vs last-touch attribution shift_
+6. _TBD — forecast variance decomposition_
+
+**Baseline:** 360,129 sessions · 270,154 users · $362,165 revenue · $63.63 AOV · $1.006 revenue/session
 
 ## Recommendations
 

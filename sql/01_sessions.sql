@@ -3,9 +3,9 @@
 -- Builds the core session-level fact table.
 --
 -- Grain: one row per session (user_pseudo_id + ga_session_id).
--- Output: `YOUR_PROJECT.ga4_growth.fct_sessions`
+-- Output: `ga4-growth-analytics-505818.ga4_growth.fct_sessions`
 --
--- BEFORE RUNNING: replace YOUR_PROJECT with your BigQuery Project ID.
+-- Project ID is already set. Paste this straight into the BigQuery editor.
 --
 -- Why this table exists: GA4 stores one row per *event* with nested
 -- arrays. Almost every growth metric (CVR, AOV, revenue per session,
@@ -13,7 +13,7 @@
 -- and reuse it everywhere downstream.
 -- =====================================================================
 
-CREATE OR REPLACE TABLE `YOUR_PROJECT.ga4_growth.fct_sessions` AS
+CREATE OR REPLACE TABLE `ga4-growth-analytics-505818.ga4_growth.fct_sessions` AS
 
 WITH events AS (
   SELECT
@@ -125,7 +125,7 @@ GROUP BY session_key, user_pseudo_id, ga_session_id;
 --        COUNT(DISTINCT user_pseudo_id) AS users,
 --        ROUND(SUM(revenue_usd), 2) AS total_revenue,
 --        ROUND(SAFE_DIVIDE(COUNTIF(reached_purchase), COUNT(*)) * 100, 2) AS cvr_pct
--- FROM `YOUR_PROJECT.ga4_growth.fct_sessions`;
+-- FROM `ga4-growth-analytics-505818.ga4_growth.fct_sessions`;
 
 -- 2. How many events were dropped for a missing ga_session_id?
 -- SELECT COUNTIF((SELECT ep.value.int_value FROM UNNEST(event_params) ep
