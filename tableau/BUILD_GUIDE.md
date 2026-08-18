@@ -119,7 +119,12 @@ bounds in the tooltip and the conclusion in the title. Honest and quick.
 4. Drag `retention_pct` to **Colour** → palette **"Growth Sequential Blue"**.
    Right-click the legend → **Edit Colours** → tick **Use Full Colour Range**.
 5. Drag `retention_pct` to **Label**, format `0.0"%"`.
-6. Title: **"Holiday cohorts retain at half the rate — 6.7% → 2.5%"**
+6. Title: **"Week-1 retention collapsed 63% into the holidays"**
+   Subtitle: `6.7% (9 Nov) → 2.5% (28 Dec), recovering to 4.1% by 18 Jan`
+
+> Check the arithmetic before writing any title. 2.5 / 6.7 = 37%, so retention fell to a
+> *third* of its November level, not a half. A title that understates your own finding is
+> the kind of thing an interviewer will check.
 
 > Sequential, single hue, light→dark. Never a rainbow or red-green ramp on a
 > heatmap: one hue means the reader decodes magnitude from lightness alone.

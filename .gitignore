@@ -30,6 +30,10 @@ data/interim/*
 ~$*.pptx
 *.tmp
 
+# Tableau: lock/recovery files created while a workbook is open
+.~*.twbr
+*.twbtmp
+
 # Power BI: commit the .pbix only if under ~50MB, otherwise screenshots only.
 # Uncomment the next line if the file gets too large:
 # *.pbix

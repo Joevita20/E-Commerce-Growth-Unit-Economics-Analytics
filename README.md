@@ -64,8 +64,6 @@
    from pure acquisition to defending a small but economically material repeat base.
 10. _TBD — forecast variance decomposition_
 
-![Purchase funnel](reports/figures/funnel.png)
-
 **Baseline:** 360,129 sessions · 270,154 users · $362,165 revenue · $63.63 AOV · $1.006 revenue/session
 
 ## Recommendations
