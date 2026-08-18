@@ -7,7 +7,13 @@
 
 **Stack:** Python · SQL · Google BigQuery · dbt · Power BI (DAX) · Tableau · Excel · A/B Testing
 
-🔗 **Live dashboard:** _Tableau Public link — coming in Step 6_
+🔗 **Live dashboard:** _Tableau Public link — publishing in progress_
+
+<!-- When the dashboard is assembled and published:
+     1. Screenshot the full dashboard -> reports/figures/tableau_dashboard.png
+     2. Replace the line above with the public URL
+     3. Uncomment the image line below                                        -->
+<!-- [![Dashboard](reports/figures/tableau_dashboard.png)](TABLEAU_PUBLIC_URL) -->
 
 ---
 
