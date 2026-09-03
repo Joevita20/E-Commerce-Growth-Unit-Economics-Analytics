@@ -7,13 +7,12 @@
 
 **Stack:** Python · SQL · Google BigQuery · dbt · Power BI (DAX) · Tableau · Excel · A/B Testing
 
-🔗 **Live dashboard:** _Tableau Public link — publishing in progress_
+🔗 **Live dashboard:** [E-Commerce Growth Analytics — Executive View](https://public.tableau.com/app/profile/joe.aj2007/viz/ecommerce_growth/Dashboard1?publish=yes)
+*(dashboard panels are scrollable — Attribution and Cohort Retention show more rows on scroll)*
 
-<!-- When the dashboard is assembled and published:
-     1. Screenshot the full dashboard -> reports/figures/tableau_dashboard.png
-     2. Replace the line above with the public URL
-     3. Uncomment the image line below                                        -->
-<!-- [![Dashboard](reports/figures/tableau_dashboard.png)](TABLEAU_PUBLIC_URL) -->
+<!-- Once a hero screenshot is saved to reports/figures/tableau_dashboard.png,
+     uncomment the line below to embed it, wrapped in the same link:          -->
+<!-- [![Dashboard](reports/figures/tableau_dashboard.png)](https://public.tableau.com/app/profile/joe.aj2007/viz/ecommerce_growth/Dashboard1?publish=yes) -->
 
 ---
 
@@ -126,11 +125,12 @@ BigQuery access requires a free sandbox project — see `docs/setup_bigquery.md`
 ## Build log
 
 - [x] **Step 1** — Repo foundation, BRD, metric definitions
-- [ ] **Step 2** — BigQuery sandbox setup + funnel/session queries
-- [ ] **Step 3** — Python ETL + data quality report
-- [ ] **Step 4** — Attribution, cohorts, statistical tests, power analysis
+- [x] **Step 2** — BigQuery sandbox setup + funnel/session queries
+- [x] **Step 3** — Python ETL + data quality report
+- [x] **Step 4** — Attribution, cohorts, statistical tests, power analysis
 - [ ] **Step 5** — Power BI star-schema model + DAX
-- [ ] **Step 6** — Excel forecast/variance model + Tableau Public
+- [ ] **Step 6a** — Assemble Tableau dashboard (5 sheets built; combine into 1 page + publish)
+- [ ] **Step 6b** — Excel forecast/variance model
 - [ ] **Step 7** — Docs, experiment brief, insights memo, process map
 
 ---
