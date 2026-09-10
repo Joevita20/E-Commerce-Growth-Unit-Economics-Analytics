@@ -10,6 +10,8 @@
 🔗 **Live dashboard:** [E-Commerce Growth Analytics — Executive View](https://public.tableau.com/app/profile/joe.aj2007/viz/ecommerce_growth/Dashboard1?publish=yes)
 *(dashboard panels are scrollable — Attribution and Cohort Retention show more rows on scroll)*
 
+📊 **Power BI model:** [E-Commerce Growth Dashboard (PDF export)](powerbi/E-Commerce%20Growth%20Dashboard.pdf) — star-schema model with a cross-table DAX measure for forecast variance
+
 <!-- Once a hero screenshot is saved to reports/figures/tableau_dashboard.png,
      uncomment the line below to embed it, wrapped in the same link:          -->
 <!-- [![Dashboard](reports/figures/tableau_dashboard.png)](https://public.tableau.com/app/profile/joe.aj2007/viz/ecommerce_growth/Dashboard1?publish=yes) -->
@@ -91,6 +93,18 @@
 
 ---
 
+## Power BI model
+
+A separate star-schema model built on the same weekly actuals and variance data used in
+the Excel workbook: three tables (`Weekly_Actuals`, `Variance_Bridge`,
+`Forecast_Assumptions`) joined on `Week`, with DAX measures for blended conversion rate
+and forecast variance — the variance measure pulls from both `Weekly_Actuals` and
+`Variance_Bridge` across the relationship rather than summing a single table. Built and
+published entirely through the browser version of Power BI; export is in
+`powerbi/E-Commerce Growth Dashboard.pdf`.
+
+---
+
 ## Data
 
 | | |
@@ -121,7 +135,7 @@
 │   ├── etl/           # Extract → clean → build marts
 │   └── utils/         # Shared config and helpers
 ├── notebooks/         # EDA, hypothesis tests, power analysis
-├── powerbi/           # Data model spec, DAX measures, .pbix
+├── powerbi/           # Star-schema model, DAX measures, dashboard PDF export
 ├── tableau/           # Workbook and published-view notes
 ├── excel/             # Driver-based forecast and variance model
 ├── docs/              # BRD, data quality report, experiment brief, insights memo
@@ -137,19 +151,6 @@ python3 -m venv .venv && source .venv/bin/activate && pip install -r requirement
 ```
 
 BigQuery access requires a free sandbox project — see `docs/setup_bigquery.md` (Step 2).
-
----
-
-## Build log
-
-- [x] **Step 1** — Repo foundation, BRD, metric definitions
-- [x] **Step 2** — BigQuery sandbox setup + funnel/session queries
-- [x] **Step 3** — Python ETL + data quality report
-- [x] **Step 4** — Attribution, cohorts, statistical tests, power analysis
-- [ ] **Step 5** — Power BI star-schema model + DAX
-- [x] **Step 6a** — Tableau dashboard assembled and published live
-- [x] **Step 6b** — Excel forecast/variance model (4 sheets: actuals, forecast assumptions, variance bridge, sensitivity table)
-- [ ] **Step 7** — Docs, experiment brief, insights memo, process map
 
 ---
 
