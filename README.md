@@ -61,15 +61,33 @@
    ($28,483 vs $21,276) — repeated for the 9 Nov (54%) and 16 Nov (42%) cohorts. The
    returning minority is disproportionately valuable per head, which changes the strategy
    from pure acquisition to defending a small but economically material repeat base.
-10. _TBD — forecast variance decomposition_
+10. **December's shortfall was a monetization problem, not a traffic problem.** A
+    driver-based forecast (November's average sessions × revenue-per-session, held flat)
+    projected **$137,718** across the 4 December weeks; actual revenue was **$132,081** —
+    a **$5,638 (4.1%) miss**. Decomposed: **session volume ran +$11,508 favourable**
+    (traffic beat plan), fully offset by a **−$17,145 unfavourable swing in
+    revenue-per-session** — visitors converted and spent less per session than
+    November's baseline, concentrated in the back half of the month. Quantifies finding
+    #8 in dollars rather than retention rates.
 
 **Baseline:** 360,129 sessions · 270,154 users · $362,165 revenue · $63.63 AOV · $1.006 revenue/session
 
 ## Recommendations
 
-1. _TBD_
-2. _TBD_
-3. _TBD_
+1. **Run a checkout-payment experiment, not a full checkout redesign.** The 38.6% drop
+   between shipping and payment entry is the highest-intent leak in the funnel. Traffic
+   only supports a **3pp minimum detectable effect over ~10 weeks** (4,070 sessions/arm) —
+   design the test at that resolution, with AOV, refund rate and overall CVR as guardrail
+   metrics, rather than shipping an untested redesign.
+2. **Fix channel measurement before reallocating budget.** Last-touch understates Direct
+   by 85% and Paid Search by 78%, and 63% of "referral" revenue was a self-referral
+   tracking artifact. Correct attribution first; only then revisit spend, since Paid
+   Search remains the weakest genuine channel on revenue-per-session even after the fix.
+3. **Prioritize monetization recovery over acquisition spend.** The sensitivity model
+   shows that recovering revenue-per-session from January's ~$0.59 back to November's
+   $1.30 — at current traffic, with no new visitors — is worth **+$19,837/week (+119%)**.
+   Compared to acquiring incremental sessions, this is the higher-leverage lever and
+   should be the first place spend is redirected.
 
 ---
 
@@ -129,8 +147,8 @@ BigQuery access requires a free sandbox project — see `docs/setup_bigquery.md`
 - [x] **Step 3** — Python ETL + data quality report
 - [x] **Step 4** — Attribution, cohorts, statistical tests, power analysis
 - [ ] **Step 5** — Power BI star-schema model + DAX
-- [ ] **Step 6a** — Assemble Tableau dashboard (5 sheets built; combine into 1 page + publish)
-- [ ] **Step 6b** — Excel forecast/variance model
+- [x] **Step 6a** — Tableau dashboard assembled and published live
+- [x] **Step 6b** — Excel forecast/variance model (4 sheets: actuals, forecast assumptions, variance bridge, sensitivity table)
 - [ ] **Step 7** — Docs, experiment brief, insights memo, process map
 
 ---
