@@ -114,13 +114,6 @@ published entirely through the browser version of Power BI; export is in
 | Grain | One row per GA4 event; `event_params` and `items` are nested arrays |
 | Access | BigQuery sandbox — free, no credit card required |
 
-> ⚠️ **Data note.** Google labels this dataset as *obfuscated*, with placeholder values and
-> limited internal consistency. All figures are **illustrative of the methodology rather than
-> actual store performance**, and are reported as rates rather than dollar amounts where possible.
-
-> ⚠️ **Sandbox note.** BigQuery sandbox tables expire after 60 days. Aggregated outputs are
-> exported to `data/processed/` and committed so results remain reproducible.
-
 ---
 
 ## Repository structure
